@@ -1,0 +1,16 @@
+<!-- Medlemslista -->
+<%- include('header') %>
+<main>
+      <section class="pagecontainer">
+          <h2>Alla våra medlemmar</h2>
+          <ul>
+            <% allmembers.forEach((member)=>{%>
+                <li><%=member.name%>
+                     <a href="/member/<%= member._id %>">se mer..</a></li> 
+            <%})%>
+          </ul>
+
+      </section>
+    
+</main>
+<%- include('footer') %>

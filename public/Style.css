@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a28755;
+}
+.standardheader{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    color: #6e3125;
+    font-size: 80px;
+    margin: auto;
+    position: relative;
+}
+.headerimgbackground{
+    position: absolute;
+    height: 200px;
+}
+.meny{
+    border: red 1px solid;
+    padding: 20px;
+}
+.meny a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+.meny a:hover{
+    text-decoration: underline;
+}
+h2{
+    color: #6e3125;
+    font-size: 40px;
+    margin: 10px 0 20px 50px;
+}
+.pagecontainer{
+    margin: 30px auto;
+    width: 70%;
+}
+.startpageinfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.startpageP{
+    font-size: 17px;
+    width: 40%;
+}
+.startpageimg{
+    width: 35%;
+    border-radius: 8px;
+}
+.newmembercontainer{
+    width: 80%;
+    margin: auto;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:#6e3125 3px solid;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+legend{
+    color: #6e3125;
+    font-size: 25px;
+}
+input{
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+button{
+    background-color: #6e3125;
+    color:#a28755;
+    font-size: 17px;
+    font-weight: 100;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: #975c33;
+    box-shadow: 1px 2px #5a5959;
+}
+.newmemberBtn{
+    margin: 30px 0px;
+}
+ul{
+    list-style: #6e3125;
+}
+li{
+    margin: 10px;
+}
+.memberheading{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: #975c33;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+footer p {
+    font-size: 17px;
+    color: #6e3125;
+    margin: 0%;
+}
+.footericon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa{
+    margin: 5px;
+    font-size: 20px;
+}

@@ -1,0 +1,25 @@
+<!-- Medlemslistan:
+En lista över alla medlemmar
+Listan skall innehålla medlemmens namn
+Varje medlem skall ha en länk till sidan där man kan se detaljer om medlemmen
+
+Detaljsida:
+Visa all information om medlemmen:
+Namn
+Email
+Telefonnummer
+Datum
+Valfria fältet
+Det skall också finnas en knapp för att ta bort medlemmen helt ur systemet. -->
+<%- include('header') %>
+<main>
+    <section class="pagecontainer">
+    <div class="memberheading">
+    <h2><%=name%></h2> <p><%=date%></p>
+    </div>
+    <p><%= number %></p>
+    <p><%= email %></p>
+    <p><%= description %></p>
+</section>
+</main>
+<%- include('footer') %>
