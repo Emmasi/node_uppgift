@@ -3,12 +3,14 @@
 <main>
       <section class="pagecontainer">
           <h2>Alla våra medlemmar</h2>
-          <ul>
-            <% allmembers.forEach((member)=>{%>
-                <li><%=member.name%>
-                     <a href="/member/<%= member._id %>">se mer..</a></li> 
-            <%})%>
-          </ul>
+        <div class="allmembercontainer">
+            <ul>
+                <% allmembers.forEach((member)=>{%>
+                    <li><%=member.name%>
+                        <a href="/members/<%= member._id %>">se mer..</a></li> 
+                <%})%>
+            </ul>
+        </div>
 
       </section>
     

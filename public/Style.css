@@ -4,23 +4,19 @@ body{
     background-color: #a28755;
 }
 .standardheader{
+    background-image: url("https://img5.goodfon.com/wallpaper/nbig/c/47/viazanie-viazanoe-priazha-klubki-spitsy-fon-kriuchki.jpg");
+    background-repeat: no-repeat;
+    background-size:100% auto;
     width: 100%;
     height: 260px;
     display: flex;
-    justify-content: center;
 }
 .heading{
     color: #6e3125;
-    font-size: 80px;
-    margin: auto;
-    position: relative;
-}
-.headerimgbackground{
-    position: absolute;
-    height: 200px;
+    font-size: 120px;
+    margin-left: 5%;
 }
 .meny{
-    border: red 1px solid;
     padding: 20px;
 }
 .meny a{
@@ -53,6 +49,10 @@ h2{
     width: 35%;
     border-radius: 8px;
 }
+.allmembercontainer{
+    width: 80%;
+    margin: auto;
+}
 .newmembercontainer{
     width: 80%;
     margin: auto;
@@ -61,7 +61,7 @@ fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:#6e3125 3px solid;
+    border:#6e3125 6px solid;
     width: 50%;
     margin: auto;
     padding: 10px;
@@ -92,6 +92,13 @@ ul{
 }
 li{
     margin: 10px;
+}
+li a{
+    text-decoration: none;
+    color: #6e3125;
+}
+li a:hover{
+    text-decoration: underline;
 }
 .memberheading{
     display: flex;
