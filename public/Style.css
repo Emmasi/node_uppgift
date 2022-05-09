@@ -53,6 +53,19 @@ h2{
     width: 80%;
     margin: auto;
 }
+.sortBtncontainer{
+    display: flex;
+    justify-content: center;
+}
+.sortBtn{
+    text-decoration: none;
+    background-color: #6e3125;
+    color: #a28755;
+    border: #975c33 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 10px;
+}
 .newmembercontainer{
     width: 80%;
     margin: auto;
