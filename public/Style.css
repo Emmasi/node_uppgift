@@ -30,7 +30,7 @@ body{
 h2{
     color: #6e3125;
     font-size: 40px;
-    margin: 10px 0 20px 50px;
+    margin: 10px 0 5px 50px;
 }
 .pagecontainer{
     margin: 30px auto;
@@ -103,6 +103,24 @@ li a:hover{
 .memberheading{
     display: flex;
     justify-content: space-around;
+}
+.memberinfo{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+.memberinfo p{
+    margin: 5px;
+}
+.memberBtnContainer{
+    display: inline-block;
+    position: relative;
+    left:60%;
+    margin: 10px;
+}
+.memberBtn{
+    margin: 10px;
 }
 footer{
     background-color: #975c33;

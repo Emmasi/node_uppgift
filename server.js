@@ -6,7 +6,7 @@ const app = express();
 app.set('views', './views');
 app.set('view engine', 'ejs');
 app.use(express.static('./public'))
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 const client = new MongoClient('mongodb://localhost:27017');
 await client.connect();
@@ -34,7 +34,7 @@ app.get('/allmembers', async (req, res) => {
 //läser en användare utifrån id
 app.get('/member/:id', async (req, res) => {
     const memberID = await memberCollection.findOne({ _id: ObjectId(req.params.id) });
-    res.render('member',memberID);
+    res.render('member',memberID )
   });
 
 // post en ny användare
