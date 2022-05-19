@@ -2,9 +2,9 @@
 ## Example Pictures
 ![startpage](docs/Startpage.png)
 
-![startpage](docs/medlemmar.png)
+![medlemmar](docs/medlemmar.png)
 
-![startpage](docs/Addmember.png)
+![addmember](docs/Addmember.png)
 
 ## How to run:
 ``` 
