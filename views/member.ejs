@@ -1,32 +1,22 @@
-<!-- Medlemslistan:
-En lista över alla medlemmar
-Listan skall innehålla medlemmens namn
-Varje medlem skall ha en länk till sidan där man kan se detaljer om medlemmen
-
-Detaljsida:
-Visa all information om medlemmen:
-Namn
-Email
-Telefonnummer
-Datum
-Valfria fältet
-Det skall också finnas en knapp för att ta bort medlemmen helt ur systemet. -->
 <%- include('header') %>
 <main>
-    <section class="pagecontainer">
-        <div class="memberheading">
-            <h2><%=name%></h2> <p><%=date%></p>
-        </div>
-        <div class="memberinfo">
-        <p><b>Telefonnummer:</b> <%= number %></p>
-        <p><b>E-mail:</b> <%= email %></p>
-        <p><b> Övrig info:</b> </p>
-        <p><%= description %></p>
-        </div>
-        <div class="memberBtnContainer">
-            <button class="memberBtn">Ändra</button>
-            <button class="memberBtn">Delete</button>
-        </div>
-    </section>
+  <section class="pagecontainer">
+    <div class="memberheading">
+      <h2><%=name%></h2>
+      <p><%=date%></p>
+    </div>
+    <div class="memberinfo">
+      <p><b>Telefonnummer:</b> <%= number %></p>
+      <p><b>E-mail:</b> <%= email %></p>
+      <p><b> Övrig info:</b></p>
+      <p><%= description %></p>
+    </div>
+    <div class="memberBtnContainer">
+      <a class="memberBtn fakeBtn" href="/editmember/<%=_id%>">Ändra</a>
+      <form method="post" action="/delete/<%=_id%>">
+        <button class="memberBtn">Delete</button>
+      </form>
+    </div>
+  </section>
 </main>
 <%- include('footer') %>

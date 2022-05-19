@@ -1,23 +1,22 @@
-<!-- Medlemslista -->
 <%- include('header') %>
 <main>
-      <section class="pagecontainer">
-          <h2>Alla våra medlemmar</h2>
-          <div class="sortBtncontainer">
-              <a href="" class="sortBtn">Nyast</a>
-              <a href="" class="sortBtn">A - Ö</a>
-              <a href="" class="sortBtn">Ö - A</a>
-          </div>
-        <div class="allmembercontainer">
-            <ul>
-                <% allmembers.forEach((member)=>{%>
-                    <li><%=member.name%>
-                        <a href="/member/<%= member._id %>">se mer..</a></li> 
-                <%})%>
-            </ul>
-        </div>
-
-      </section>
-    
+  <section class="pagecontainer">
+    <h2>Alla våra medlemmar</h2>
+    <div class="sortBtncontainer">
+      <a href="/allmembers" class="sortBtn">Äldsta</a>
+      <a href="/allmembers/sort/a" class="sortBtn">A - Ö</a>
+      <a href="/allmembers/sort/z" class="sortBtn">Ö - A</a>
+    </div>
+    <div class="allmembercontainer">
+      <ul>
+        <% members.forEach((member)=>{%>
+        <li>
+          <%=member.name%>
+          <a href="/member/<%= member._id %>">se mer..</a>
+        </li>
+        <%})%>
+      </ul>
+    </div>
+  </section>
 </main>
 <%- include('footer') %>

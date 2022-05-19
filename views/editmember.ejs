@@ -1,0 +1,24 @@
+<%- include('header') %>
+<main>
+    <section class="pagecontainer">
+        <div class="newmembercontainer">
+            <h2>SUppdatera medlem/h2>
+            <form action="/editmember/<%=_id%>" method="post">
+                <fieldset>
+                    <legend>Ändra</legend>
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name" value="<%= name%>">
+                    <label for="number">Telefonnummer</label>
+                    <input type="tel" id="number" name="number" value="<%= number%>">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" value="<%= email%>">
+                    <label for="description">Valfria fält</label>
+                    <textarea id="description" name="description" value="<%= description%>"></textarea>
+                    <button class="newmemberBtn" >Ändra</button>
+                </fieldset>
+            </form>
+            
+        </div>
+    </section>
+</main>
+<%- include('footer') %>

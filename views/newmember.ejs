@@ -1,33 +1,25 @@
-<!-- Formulär:
-Formulär för att lägga till medlemmen, med alla fälten:
-Namn
-Email
-Telefonnummer
-Datum
-Valfria fältet -->
 <%- include('header') %>
 <main>
-    <section class="pagecontainer">
-        <div class="newmembercontainer">
-            <h2>Skapa ny medlem</h2>
-            <form action="newmember" method="post">
-                <fieldset>
-                    <legend>Fyll i formulär</legend>
-                    <label for="name">Namn</label>
-                    <input type="text" id="name" name="name">
-                    <label for="number">Telefonnummer</label>
-                    <input type="tel" id="number" name="number">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
-                    <label for="date">Dagens datum</label>
-                    <input type="date" id="date" name="date">
-                    <label for="info">Valfria fält</label>
-                    <textarea id="info" name="info"></textarea>
-                    <button class="newmemberBtn" >Skapa</button>
-                </fieldset>
-            </form>
-            
-        </div>
-    </section>
+  <section class="pagecontainer">
+    <div class="newmembercontainer">
+      <h2>Skapa ny medlem</h2>
+      <form action="newmember" method="post">
+        <fieldset>
+          <legend>Fyll i formulär</legend>
+          <label for="name">Namn</label>
+          <input type="text" id="name" name="name" />
+          <label for="number">Telefonnummer</label>
+          <input type="tel" id="number" name="number" />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+          <label for="date">Dagens datum</label>
+          <input type="date" id="date" name="date" />
+          <label for="description">Valfria fält</label>
+          <textarea id="description" name="description"></textarea>
+          <button class="newmemberBtn">Skapa</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
 </main>
 <%- include('footer') %>

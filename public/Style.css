@@ -97,6 +97,17 @@ button{
     border: #975c33;
     box-shadow: 1px 2px #5a5959;
 }
+.fakeBtn{
+    background-color: #6e3125;
+    color:#a28755;
+    font-size: 17px;
+    font-weight: 100;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: #975c33;
+    box-shadow: 1px 2px #5a5959;
+}
 .newmemberBtn{
     margin: 30px 0px;
 }
